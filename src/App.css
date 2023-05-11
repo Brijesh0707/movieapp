@@ -1,38 +1,228 @@
-.App {
+body{
+  background-color: black;
+}
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search{
+  text-align: center;
+  background-color: brown;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#search1{
+  margin-bottom: 20px;
+  border: 5px;
+  border-radius: 4px;
+}
+input{
+  border: 2px solid black;
+}
+
+.search h3{
+  color: white;
+  font-family: 'Lucida Sans Regular';
+  font-weight: bold;
+
+}
+
+.main {
+  margin: 2rem 0;
+  background-color: black;
+  height: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.menu-card {
+  width: calc(60% - 1rem); 
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-card {
+    width: calc(50% - 1rem);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (max-width: 576px) {
+  .menu-card {
+    width: 100%;
+  }
+}
+
+.menu-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 1rem;
+  /* background-color: #fff; */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-info:hover {
+  transform: translateY(-5px);
+}
+
+.menu-info h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-decoration: none; 
+  list-style: none;
+  color: white;
+  
+}
+
+.menu-info img {
+  width: 150px;
+  height: 300px;
+
+}
+
+#section1{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+}
+
+.movie-menu img{
+  width: 250px;
+  height: 350px;
+
+}
+
+.movie-detail{
+  background-color: brown;
+  height: 350px;
   color: white;
 }
+.movie-detail p{
+  padding-left: 7px;
+  padding-top: 10px;
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main2{
+  display: flex;
+  margin-top: 130px;
+  margin-left: 350px;
+  border: 2px solid white;
+  height: 360px;
+  
+}
+
+#btn4{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+  margin-left: 10px;
+}
+#btn4:hover{
+  background-color: white;
+  color: black;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .main2{
+    display: inline-block;
+    margin-top: 130px;
+    margin-left: 50px;
+    height: 730px;
+    border: 2px solid white;
+
   }
-  to {
-    transform: rotate(360deg);
+  #section1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* display: flex; */
   }
+  
+}
+
+@media only screen and (max-width: 576px) {
+  .main2{
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 80px;
+  }
+  #section1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* display: flex; */
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .main2{
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+  #section1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* display: flex; */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 361px) {
+  .main2{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 60px;
+  }
+  #section1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* display: flex; */
+  }
+  .movie-menu img{
+    width: 250px;
+    height: 350px;
+  
+  }
+}
+
+#main4{
+  background-color: black;
 }
